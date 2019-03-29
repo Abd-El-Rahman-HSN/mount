@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # =============== Images Related Gems ===============
 gem 'ckeditor'
 gem 'paperclip'
+ gem 'rails_12factor', group: :production
 
 # =============== Development & Test ================
 group :development, :test do
