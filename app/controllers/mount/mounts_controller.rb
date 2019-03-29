@@ -1,5 +1,5 @@
 class Mount::MountsController < Mount::BaseMountController
   def index
-    render 'mount/index'
+    @posts = Post.all
   end
 end

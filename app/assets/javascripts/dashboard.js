@@ -11,9 +11,14 @@
 //= require datatables/jquery.dataTables.min.js
 //= require select2/dist/js/select2.full.min.js
 //= require bootstrap-tagsinput/dist/bootstrap-tagsinput.js
+//= require froala_editor.min.js
 //
 //= require dashboard/waves.js
 //= require dashboard/sidebarmenu.js
 //= require dashboard/dashboard1.js
 //
 //= require dashboard/custom.min.js
+
+
+$('selector').froalaEditor();
+

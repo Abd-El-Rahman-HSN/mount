@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'ckeditor'
 gem 'paperclip'
  gem 'rails_12factor', group: :production
+gem "wysiwyg-rails"
 
 # =============== Development & Test ================
 group :development, :test do
