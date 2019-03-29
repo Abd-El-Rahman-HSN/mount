@@ -1,0 +1,28 @@
+<nav class="sidebar-nav">
+  <ul id="sidebarnav">
+    <li class="nav-small-cap">--- Stylist</li>
+
+
+    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-Car-Wheel"></i><span class="hide-menu">Admins </span></a>
+      <ul aria-expanded="false" class="collapse">
+        <li><%= link_to 'All Admins', admin_admins_path %></li>
+        <li><%= link_to 'New Admin', new_admin_admin_path %></li>
+      </ul>
+    </li>
+
+    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-Car-Wheel"></i><span class="hide-menu">Categories </span></a>
+      <ul aria-expanded="false" class="collapse">
+        <li><%= link_to 'All Categories', admin_categories_path %></li>
+        <li><%= link_to 'New Category', new_admin_category_path %></li>
+      </ul>
+    </li>
+    
+    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-Car-Wheel"></i><span class="hide-menu">Posts </span></a>
+      <ul aria-expanded="false" class="collapse">
+        <li><%= link_to 'All Posts', admin_posts_path %></li>
+        <li><%= link_to 'New Post', new_admin_post_path %></li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>

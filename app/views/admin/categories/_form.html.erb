@@ -1,0 +1,44 @@
+<%= render 'shared/error_messages', object: @category %>
+
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+      <div class="card-header bg-info">
+        <% if @category.new_record? %>
+          <h4 class="m-b-0 text-white">Add new Category</h4>
+        <% else %>
+          <h4 class="m-b-0 text-white">Edit Category</h4>
+        <% end %>
+      </div>
+			<div class="card-body">
+        <br/>
+        <%= form_for [:admin, @category], html: {  help: :block } do |f| %>
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.label :name, 'Name' %>
+                <%= f.text_field :name, required: true, class: 'form-control' %>
+                <small>Name will be displayed based on language selected</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.submit 'Submit', class: 'btn btn-lg btn-primary' %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	$(function() {
+		$(".select2").select2();
+	});
+</script>

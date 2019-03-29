@@ -1,0 +1,95 @@
+<%= render 'shared/error_messages', object: @admin %>
+
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+      <div class="card-header bg-info">
+        <% if @admin.new_record? %>
+          <h4 class="m-b-0 text-white">Add new Admin</h4>
+        <% else %>
+          <h4 class="m-b-0 text-white">Edit Admin</h4>
+        <% end %>
+      </div>
+			<div class="card-body">
+        <br/>
+        <%= form_for [:admin, @admin], html: {  help: :block } do |f| %>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.label :first_name, 'First Name' %>
+                <%= f.text_field :first_name, required: true, class: 'form-control' %>
+                <small>Title will be displayed based on language selected</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <%= f.label :last_name, 'Last Name' %>
+                  <%= f.text_field :last_name, required: true, class: 'form-control' %>
+                  <small>Title will be displayed based on language selected</small>
+              </div>
+            </div>
+          </div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<%= f.label :email, 'Email' %>
+								<%= f.text_field :email, required: true, class: 'form-control' %>
+								<small>Description will be displayed based on language selected</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+									<%= f.label :password, 'Password' %>
+									<% if @minimum_password_length %>
+									<em>(<%= @minimum_password_length %> characters minimum)</em>
+									<% end %><br />
+									<%= f.password_field :password, required: true, class: 'form-control', autocomplete: "new-password" %>
+									<small>Description will be displayed based on language selected</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+									<%= f.label :password_confirmation, 'Password Confirmation' %>
+									<%= f.password_field :password_confirmation, required: true, class: 'form-control', autocomplete: "new-password" %>
+							</div>
+						</div>
+					</div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.label :avatar, 'Cover' %>
+                <%= f.file_field :avatar, required: true, class: 'form-control' %>
+                <small>Cover will be displayed based on language selected</small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= f.submit 'Submit', class: 'btn btn-lg btn-primary' %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	$(function() {
+		$(".select2").select2();
+	});
+</script>
