@@ -11,5 +11,5 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w[ckeditor/config.js]
 Rails.application.config.assets.precompile += %w( dashboard.css.scss dashboard.js admin_login.css.scss admin_login.js mount.css.scss mount.js )
+Rails.application.config.assets.precompile += %w[ckeditor/config.js]

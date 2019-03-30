@@ -28,6 +28,7 @@ config/database.yml
 coverage
 .byebug_history
 public/coverage
+public/ckeditor_assets
 public/uploads
 /public/sitemap.xml.gz
 /.env

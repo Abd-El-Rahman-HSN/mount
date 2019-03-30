@@ -31,9 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 
 # =============== Images Related Gems ===============
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor'
 gem 'paperclip'
- gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 gem "wysiwyg-rails"
 gem 'carrierwave'
 gem 'mini_magick'
