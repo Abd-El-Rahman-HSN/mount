@@ -31,14 +31,9 @@ Ckeditor.setup do |config|
   # Customize ckeditor assets path
   # By default: nil
   # config.asset_path = "http://www.example.com/assets/ckeditor/"
-
+  config.parent_controller = 'ActionController::Base'
   # To reduce the asset precompilation time, you can limit plugins and/or languages to those you need:
   # By default: nil (no limit)
   # config.assets_languages = ['en', 'uk']
   # config.assets_plugins = ['image', 'smiley']
-end
-
-# append this after setup block
-Ckeditor::ApplicationController.class_eval do
-  layout "admin"
 end
