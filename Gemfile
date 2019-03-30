@@ -35,7 +35,8 @@ gem 'ckeditor'
 gem 'paperclip'
  gem 'rails_12factor', group: :production
 gem "wysiwyg-rails"
-
+gem 'carrierwave'
+gem 'mini_magick'
 # =============== Development & Test ================
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
