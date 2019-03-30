@@ -61,7 +61,7 @@
 
 			<!-- Begin Post Content -->
 			<div class="article-post">
-			<%= @post.content.html_safe %>
+			<%= sanitize @post.content.html_safe %>
       </div>
 			<!-- End Post Content -->
 

@@ -29,13 +29,18 @@ gem 'jbuilder', '~> 2.5'
 
 # ============ Action Cable Related Gems ============
 # gem 'redis', '~> 4.0'
-
+group :development do
+  gem 'brakeman'
+end
 # =============== Images Related Gems ===============
 gem 'ckeditor'
 gem 'paperclip'
 gem 'rails_12factor', group: :production
 gem "wysiwyg-rails"
 gem 'carrierwave'
+group :development do
+  gem 'rails_db', '2.0.4'
+end
 gem 'mini_magick'
 # =============== Development & Test ================
 group :development, :test do
