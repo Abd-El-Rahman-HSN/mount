@@ -2,7 +2,6 @@
 //= require rails-ujs
 //= require jquery/jquery.min.js
 //= require bootstrap/js/popper.min.js
-//= require ckeditor/init
 //= require bootstrap/js/bootstrap.min.js
 //= require ps/perfect-scrollbar.jquery.min.js
 //= require toast-master/js/jquery.toast.js
