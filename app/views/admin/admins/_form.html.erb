@@ -69,8 +69,18 @@
             <div class="col-md-12">
               <div class="form-group">
                 <%= f.label :avatar, 'Cover' %>
-                <%= f.file_field :avatar, required: true, class: 'form-control' %>
+                <%= f.file_field :avatar, class: 'form-control' %>
                 <small>Cover will be displayed based on language selected</small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <%= f.label :bio, 'Bio' %>
+                  <%= f.text_area :bio, required: true, class: 'form-control' %>
+                  <small>Bio will be displayed based on language selected</small>
               </div>
             </div>
           </div>

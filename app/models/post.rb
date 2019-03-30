@@ -1,4 +1,9 @@
 class Post < ApplicationRecord
+	acts_as_votable
+
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   belongs_to :category
   belongs_to :admin
 

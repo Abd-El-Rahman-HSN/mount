@@ -14,6 +14,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # =============== Authentication Gems ===============
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'cancancan', '~> 2.3'
+gem 'acts_as_votable', '~> 0.12.0'
+gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
 # =============== Assets Related Gems ===============
 gem 'jquery-rails'

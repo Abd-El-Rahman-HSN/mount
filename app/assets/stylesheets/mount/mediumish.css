@@ -16,6 +16,29 @@ a {
 a,a:hover {
 	transition:all 0.2s;
 }
+.homecover {
+    background-size: cover;
+    padding: 10rem 0rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+    background-image: url(../img/blog-cover.jpg);
+    background-position: center;
+}
+.mainheading h1.sitetitle {
+    font-family: Righteous;
+}
+
+.homecover h1, .homecover .lead {
+    display: block;
+}
+
+.homecover h1 span, .homecover .lead span {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3px 20px 3px 20px;
+    display: inline-block;
+}
+
 .mediumnavigation {
 	background:rgba(255,255,255,.97);
 	box-shadow:0 2px 2px -2px rgba(0,0,0,.15);

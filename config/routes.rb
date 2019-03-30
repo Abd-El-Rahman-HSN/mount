@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   root 'mount/mounts#index'
   namespace :mount, path: '/' do
 
+    resources :posts do 
+     member do 
+        get "like" => "posts#like" , as: :like
+        get "dislike", to: "posts#dislike", as: :dislike
+     end
+    end
+
   end
 
   namespace :admin do
