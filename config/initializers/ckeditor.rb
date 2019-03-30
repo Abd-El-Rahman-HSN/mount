@@ -37,3 +37,8 @@ Ckeditor.setup do |config|
   # config.assets_languages = ['en', 'uk']
   # config.assets_plugins = ['image', 'smiley']
 end
+
+# append this after setup block
+Ckeditor::ApplicationController.class_eval do
+  layout "admin"
+end
