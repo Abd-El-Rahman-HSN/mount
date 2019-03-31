@@ -17,7 +17,8 @@
 //= require dashboard/dashboard1.js
 //
 //= require dashboard/custom.min.js
-
+//= require Chart.bundle
+//= require chartkick
 
 $('selector').froalaEditor();
 

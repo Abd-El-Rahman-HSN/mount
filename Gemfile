@@ -26,6 +26,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # ================ APIs Related Gems ================
 gem 'jbuilder', '~> 2.5'
+gem "chartkick"
+gem 'groupdate'
 
 # ============ Action Cable Related Gems ============
 # gem 'redis', '~> 4.0'
