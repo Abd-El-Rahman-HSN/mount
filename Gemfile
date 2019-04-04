@@ -10,8 +10,17 @@ gem 'dotenv-rails'
 gem 'tzinfo-data'
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development do
+#   gem "capistrano", "~> 3.7"
+#   gem "capistrano-rails", "~> 1.2"
+  gem "capistrano-passenger", "~> 0.2.0"
+  gem "capistrano-yarn"
+#   #Add this if you"re using rbenv
+  gem "capistrano-rbenv", "~> 2.1"
+end
+
+group :development do
   gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
+  # gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
