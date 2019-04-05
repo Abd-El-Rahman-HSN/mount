@@ -27,13 +27,15 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/passenger
 #
 require 'capistrano/rails'
-require 'capistrano/passenger'
+# require 'capistrano/passenger'
 
     # If you are using rbenv add these lines:
 require 'capistrano/rbenv'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.3'
-
+# set :default_env, {
+#   "PASSENGER_INSTANCE_REGISTRY_DIR" => "/tmps"
+# }
     # If you are using rvm add these lines:
     # require 'capistrano/rvm'
     # set :rvm_type, :user
